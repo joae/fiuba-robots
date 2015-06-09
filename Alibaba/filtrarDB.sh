@@ -22,8 +22,12 @@ do
 	then
 		if [ $(echo "$CONT1 < $MAX_TRAIN_COMP" | bc) -ne 0 ]
 		then
+			user_id="^$(echo "$VAR" | cut -d, -f1),"
+			VAR="$VAR,$(grep "$user_id" user_info_format1.csv | cut -d, -f2,3)"
 			echo "$VAR" >> train.csv
 		else
+			user_id="^$(echo "$VAR" | cut -d, -f1),"
+			VAR="$VAR,$(grep "$user_id" user_info_format1.csv | cut -d, -f2,3)"
 			echo "$VAR" >> test.csv
 		fi
 		CONT1=$((CONT1+1))
@@ -32,8 +36,12 @@ do
 		then
 			if [ $(echo "$CONT0 < $MAX_TRAIN_NOCOMP" | bc) -ne 0 ]
 			then
+				user_id="^$(echo "$line" | cut -d, -f1),"
+				line="$line,$(grep "$user_id" user_info_format1.csv | cut -d, -f2,3)"
 				echo "$line" >> train.csv
 			else
+				user_id="^$(echo "$line" | cut -d, -f1),"
+				line="$line,$(grep "$user_id" user_info_format1.csv | cut -d, -f2,3)"
 				echo "$line" >> test.csv
 			fi
 			CONT0=$((CONT0+1))

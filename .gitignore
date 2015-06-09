@@ -8,6 +8,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 env/
+tpenv/
 build/
 develop-eggs/
 dist/
@@ -49,9 +50,13 @@ coverage.xml
 
 # Django stuff:
 *.log
+migrations/
 
 # Sphinx documentation
 docs/_build/
 
 # PyBuilder
 target/
+
+# Carpeta con los csv originales - joa
+resources/

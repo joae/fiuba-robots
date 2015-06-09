@@ -4,6 +4,9 @@ class SubmissionTest(models.Model):
 	user_id = models.IntegerField()
 	merchant_id = models.IntegerField()
 	prob = models.IntegerField()
+	age_range = models.IntegerField()
+	gender = models.IntegerField
+
 
 	class Meta:
 		managed = True
@@ -13,6 +16,8 @@ class SubmissionTrain(models.Model):
 	user_id = models.IntegerField()
 	merchant_id = models.IntegerField()
 	prob = models.IntegerField()
+	age_range = models.IntegerField()
+	gender = models.IntegerField
 
 	class Meta:
 		managed = True
