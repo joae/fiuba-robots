@@ -40,7 +40,7 @@ $ sudo pip install django
 
 Conectar python y postgresql
 $ sudo apt-get build-dep python-psycopg2
-$ sudo pip install psycopg2
+$ sudo pip install python-psycopg2
 
 /** GUI para postgres **/
 $ sudo apt-get install pgadmin3

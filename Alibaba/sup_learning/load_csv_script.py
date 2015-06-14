@@ -3,7 +3,7 @@ csv_test="data_format1/test.csv"
 csv_train="data_format1/train.csv"
 
 # Full path to your django project directory
-django_path = "/home/joa/Documents/Facultad/robots/fiuba-robots/Alibaba/"
+django_path = "/Users/jje-personal/projects/facultad/fiuba-robots/Alibaba"
 
 import sys,os
 sys.path.append(django_path)
