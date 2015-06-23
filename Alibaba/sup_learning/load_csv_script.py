@@ -3,7 +3,7 @@ csv_test="data_format1/test.csv"
 csv_train="data_format1/train.csv"
 
 # Full path to your django project directory
-django_path = "/Users/jje-personal/projects/facultad/fiuba-robots/Alibaba"
+django_path = "/home/joa/Documents/Facultad/robots/fiuba-robots/Alibaba/"
 
 import sys,os
 sys.path.append(django_path)
@@ -20,7 +20,7 @@ for row in dataReader:
 	submission_test.merchant_id = row[1]
 	submission_test.prob = row[2]
 	submission_test.age_range = (row[3],0)[row[3]==''] # hack por si no esta la edad
-	submission_test.gender = (row[3],0)[row[3]==''] # hack por si no esta el genero
+	submission_test.gender = (row[4],0)[row[4]==''] # hack por si no esta el genero
 	submission_test.save()
 
 dataReader = csv.reader(open(csv_train), delimiter=',', quotechar='"')
