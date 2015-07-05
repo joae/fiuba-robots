@@ -1,4 +1,4 @@
-# Perceptron con data de get_data
+# grafico perceptron variando iteraciones
 
 # Full path to your django project directory
 django_path = "/Users/jje-personal/projects/facultad/fiuba-robots/Alibaba"

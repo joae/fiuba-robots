@@ -1,7 +1,7 @@
 # Perceptron con data de get_data
 
 # Full path to your django project directory
-django_path = "/Users/jje-personal/projects/facultad/fiuba-robots/Alibaba"
+django_path = "/home/joa/Documents/Facultad/robots/fiuba-robots/Alibaba/"
 
 import sys,os
 sys.path.append(django_path)

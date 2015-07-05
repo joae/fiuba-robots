@@ -1,4 +1,5 @@
-# Byte-compiled / optimized / DLL files
+#
+Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 
@@ -8,6 +9,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 env/
+env-mlp/
 tpenv/
 build/
 develop-eggs/
@@ -60,3 +62,6 @@ target/
 
 # Carpeta con los csv originales - joa
 resources/
+
+Alibaba/alibaba.sublime-project
+Alibaba/alibaba.sublime-workspace
